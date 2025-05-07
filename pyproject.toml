@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 authors = [{ name = "Ivan Sitkin", email = "alvinera@yandex.ru" }]
 requires-python = ">=3.12"
+license = "MIT"
 dependencies = [
     "aiomisc>=17.7.7",
     "aiomisc-dependency>=0.1.21",

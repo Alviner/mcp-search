@@ -11,12 +11,12 @@ log = logging.getLogger(__name__)
 
 def main() -> None:
     basic_config(level=LogLevel.info, format=LogFormat.color)
-    log.info("initializing MCP Search")
 
     args = Args()
-    args.parse_args()
-    configure_dependecies(args)
+    args = args.parse_args()
 
+    log.info("initializing MCP Search")
+    configure_dependecies(args)
 
     logs = args.logs
     with entrypoint(MCPServer(), log_level=logs.level, log_format=logs.format) as loop:
