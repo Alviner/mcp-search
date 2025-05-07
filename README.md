@@ -5,7 +5,7 @@ MCP Search is a Python project that provides a simple search interface for query
 ## Installation
 
 Can be installed with uv
-  uv tool install "git+https://github.com/Alviner/mcp-search@main"
+  uv pip install "git+https://github.com/Alviner/mcp-search@main"
 
 
 ## Configuration
@@ -50,12 +50,11 @@ OpenAI options:
 "context_servers": {
     "mcp-search": {
       "command": {
-        "path": "uvx",
+        "path": "mcp-search",
         "env": {
           "MCP_OPENAI_API_KEY": "<OPENAI_API_KEY>"
         },
         "args": [
-          "mcp-search",
           "--docs-path",
           "<DOCS_PATH>"
         ]
