@@ -12,7 +12,9 @@ log = logging.getLogger(__name__)
 def main() -> None:
     basic_config(level=LogLevel.info, format=LogFormat.color)
 
-    args = Args()
+    args = Args(
+        auto_env_var_prefix="MCP_"
+    )
     args = args.parse_args()
 
     log.info("initializing MCP Search")
