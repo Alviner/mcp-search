@@ -5,7 +5,9 @@ MCP Search is a Python project that provides a simple search interface for query
 ## Installation
 
 Can be installed with uv
+```(bash)
   uv pip install "git+https://github.com/Alviner/mcp-search@main"
+```
 
 
 ## Configuration
