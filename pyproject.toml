@@ -1,0 +1,26 @@
+[project]
+name = "mcp-search"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Ivan Sitkin", email = "alvinera@yandex.ru" }]
+requires-python = ">=3.12"
+dependencies = [
+    "aiomisc>=17.7.7",
+    "aiomisc-dependency>=0.1.21",
+    "argclass>=1.1.0",
+    "lancedb>=0.22.0",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.23",
+    "langchain-huggingface>=0.1.2",
+    "langchain-openai>=0.3.16",
+    "mcp>=1.7.1",
+    "pydantic>=2.11.4",
+]
+
+[project.scripts]
+mcp-search = "mcp_search:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
