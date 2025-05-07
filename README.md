@@ -1,10 +1,8 @@
 # MCP Search
-================
 
 MCP Search is a Python project that provides a simple search interface for querying documentation.
 
 ## Configuration
---------------
 
 MCP Search can be configured using the following environment variables:
 ```(bash)
@@ -34,11 +32,9 @@ OpenAI options:
                         (default: meta-llama/Meta-Llama-3.1-70B-Instruct-fast)
 ```
 ## Contributing
-------------
 
 To contribute to MCP Search, please fork the repository and submit a pull request with your changes.
 
 ## License
--------
 
 MCP Search is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
